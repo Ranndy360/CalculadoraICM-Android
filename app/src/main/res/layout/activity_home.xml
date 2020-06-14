@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="100dp"
+    android:paddingLeft="60dp"
+    android:paddingRight="60dp"
+    android:paddingTop="80dp"
+    tools:context=".ui.Home">
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight=".5"
+        android:ems="10"
+        android:layout_height="0dp"
+        android:inputType="textPersonName"
+        android:hint="Usuario/Correo" />
+
+
+    <EditText
+        android:id="@+id/clave"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight=".5"
+        android:ems="10"
+        android:layout_height="0dp"
+        android:inputType="textPassword"
+        android:hint="Contraseña" />
+
+    <TextView
+        android:id="@+id/msgValidacion"
+        android:layout_width="match_parent"
+        android:layout_weight=".2"
+        android:textColor="@color/colorRed"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        android:text="Credenciales invalidas" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_weight=".3"
+        android:text="Ingresar"
+        android:layout_height="0dp" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="match_parent"
+        android:layout_weight=".3"
+        android:text="Registrate"
+        android:layout_height="0dp" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="100dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="60dp"
+    tools:context=".ui.Calculadora">
+
+    <EditText
+        android:id="@+id/txtPeso"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight=".5"
+        android:ems="10"
+        android:hint="Peso (Kg)"
+        android:inputType="number|numberDecimal|numberSigned"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/txtAltura"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight=".5"
+        android:ems="10"
+        android:hint="Altura (m)"
+        android:inputType="number|numberDecimal|numberSigned"
+        android:singleLine="true" />
+
+
+    <TextView
+        android:id="@+id/lblValidar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="Ingrese datos validos"
+        android:textColor="#E80C0C"
+        android:textSize="18sp"
+        android:typeface="normal"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight=".5"
+        android:ems="10"
+        android:layout_height="0dp"
+        android:text="Calcular" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight=".5"
+        android:ems="10"
+        android:text="Ver Registros" />
+</LinearLayout>
